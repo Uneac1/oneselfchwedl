@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>前端 UI 界面实现 - 魏敬沅项目详情</title>
+<meta name="description" content="前端 UI 界面实现项目详情，展示页面布局、组件界面、响应式呈现和交互状态设计能力。">
+<link rel="canonical" href="https://chwedl.com/qdui/">
+<meta property="og:title" content="前端 UI 界面实现 - 项目详情">
+<meta property="og:description" content="围绕信息层级、组件结构、响应式布局和按钮状态完成前端 UI 实现。">
+<meta property="og:image" content="https://chwedl.com/qdUI.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+  tailwind.config = { theme: { extend: { colors: { brand: { primary: '#4263eb', hover: '#3b5bdb' } }, fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
+</script>
+<style>
+  .soft-shadow { box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05); }
+  .glass-panel { background: rgba(255,255,255,.78); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,232,240,.8); }
+  .evidence-image { display: block; width: auto; max-width: 100%; height: auto; margin: 0 auto; }
+  @media (max-width: 480px) { h1 { font-size: 2.5rem; line-height: 1.05; } h2, a, span, p, li { overflow-wrap: anywhere; } }
+</style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 font-sans antialiased selection:bg-brand-primary selection:text-white">
+<nav class="fixed top-0 w-full z-50 glass-panel" aria-label="详情页导航">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+<a class="text-sm font-semibold text-slate-700 hover:text-brand-primary rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="../index.html#projects">返回项目</a>
+<a class="text-xs font-medium text-white bg-slate-800 hover:bg-slate-700 px-4 py-1.5 rounded-full shadow-sm transition-all whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="mailto:xunac131@gmail.com">联系我</a>
+</div>
+</nav>
+<main class="pt-24 pb-16">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+<div class="max-w-4xl">
+<div class="flex flex-wrap gap-2 mb-5">
+<span class="px-2.5 py-1 rounded text-[10px] font-semibold bg-brand-primary text-white">项目详情</span>
+<span class="px-2.5 py-1 rounded text-[10px] border border-slate-200 bg-white text-slate-500">Frontend</span>
+<span class="px-2.5 py-1 rounded text-[10px] border border-slate-200 bg-white text-slate-500">UI</span>
+<span class="px-2.5 py-1 rounded text-[10px] border border-slate-200 bg-white text-slate-500">Responsive</span>
+</div>
+<p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">Frontend UI / Interface Implementation</p>
+<h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-5">前端 UI 界面实现</h1>
+<p class="text-base md:text-lg text-slate-600 leading-relaxed">`qdUI.png` 对应的是前端 UI 方向，重点是把业务内容组织成清晰的页面结构：信息层级、组件布局、操作入口、状态反馈和响应式呈现都要能服务真实使用。</p>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+<div class="bg-white rounded-2xl border border-slate-200 soft-shadow overflow-hidden">
+<div class="bg-slate-50 p-4 sm:p-6 overflow-x-auto">
+<img class="evidence-image" src="../img/qdUI.png" alt="前端 UI 界面实现截图" width="1920" height="919" fetchpriority="high" decoding="async">
+</div>
+<div class="p-5 text-sm text-slate-600">图片按原始 1920×919 宽屏比例自适应展示，用作前端 UI 界面实现方向的证据。</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+<article class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow"><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">业务背景</p><p class="text-sm text-slate-600 leading-relaxed">自动化工具和业务页面不仅要能跑，还要让使用者快速理解当前状态、下一步动作和异常位置。</p></article>
+<article class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow"><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">界面拆解</p><p class="text-sm text-slate-600 leading-relaxed">按导航、内容区、数据区、操作区和状态反馈拆分页面，避免所有信息堆在同一个区域。</p></article>
+<article class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow"><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">执行方式</p><p class="text-sm text-slate-600 leading-relaxed">用 HTML、CSS 和 JavaScript 实现布局、组件、交互状态和响应式适配，并按业务优先级组织视觉层级。</p></article>
+<article class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow"><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">产出价值</p><p class="text-sm text-slate-600 leading-relaxed">让工具从“功能可用”进一步变成“界面清楚、操作顺手、维护方便”的可交付页面。</p></article>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<div class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 soft-shadow">
+<p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2">UI Detail 界面细节</p>
+<h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6">从页面截图到前端实现能力</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="rounded-xl border border-slate-200 p-5"><h3 class="text-base font-bold text-slate-900 mb-2">信息层级</h3><p class="text-sm text-slate-600 leading-relaxed">根据业务重要性安排标题、数据、操作按钮和辅助说明，降低阅读成本。</p></div>
+<div class="rounded-xl border border-slate-200 p-5"><h3 class="text-base font-bold text-slate-900 mb-2">组件结构</h3><p class="text-sm text-slate-600 leading-relaxed">把页面拆成导航、卡片、表单、状态标签、操作按钮等可复用结构。</p></div>
+<div class="rounded-xl border border-slate-200 p-5"><h3 class="text-base font-bold text-slate-900 mb-2">交互状态</h3><p class="text-sm text-slate-600 leading-relaxed">关注 hover、focus、按钮状态、空状态和错误提示，让界面更像真实工具。</p></div>
+<div class="rounded-xl border border-slate-200 p-5"><h3 class="text-base font-bold text-slate-900 mb-2">响应式适配</h3><p class="text-sm text-slate-600 leading-relaxed">让页面在桌面和移动端都能保持清晰布局，避免文字和按钮互相挤压。</p></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10 text-xs text-slate-500">Portfolio v0.0121</footer>
+</body>
+</html>
