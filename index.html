@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html><html class="scroll-smooth" lang="zh-CN" style=""><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>魏敬沅 Wei Jingyuan - AI 自动化 / 设计美工 / 电商视觉个人简历</title>
-<meta name="description" content="魏敬沅个人简历与作品集，展示 AI 工具应用、自动化提效、设计美工、电商视觉、办公与数据处理能力。">
-<meta name="keywords" content="魏敬沅,个人简历,作品集,AI工具,自动化,电商美工,设计,数据处理">
+<title>魏敬沅 Wei Jingyuan - Agent 开发 / AI 工作流 / 自动化工具个人简历</title>
+<meta name="description" content="魏敬沅个人简历与作品集，重点展示 Agent 开发、AI 工作流编排、自动化工具、插件脚本、接口调用与业务流程落地能力。">
+<meta name="keywords" content="魏敬沅,个人简历,作品集,Agent开发,AI工作流,Codex,Claude Code,自动化工具,插件,脚本,API">
 <meta name="author" content="魏敬沅">
 <link rel="canonical" href="https://chwedl.com/">
 <meta property="og:title" content="魏敬沅 Wei Jingyuan - 个人简历与作品集">
-<meta property="og:description" content="AI 工具应用、自动化提效、设计美工、电商视觉与办公数据处理作品集。">
+<meta property="og:description" content="Agent 开发、AI 工作流编排、自动化工具、插件脚本与业务流程落地作品集。">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://chwedl.com/">
-<meta property="og:image" content="https://chwedl.com/tupiantif.png">
+<meta property="og:image" content="https://chwedl.com/img/tupiantif.png">
 <meta property="og:image:width" content="960">
 <meta property="og:image:height" content="720">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://chwedl.com/tupiantif.png">
+<meta name="twitter:image" content="https://chwedl.com/img/tupiantif.png">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script>
     tailwind.config = {
@@ -105,6 +105,53 @@
       .p-6 { padding: 1.25rem; }
       .hover-lift:hover { transform: none; }
     }
+    @media print {
+      @page { size: A4; margin: 7mm; }
+      html, body { background: #fff !important; color: #0f172a !important; font-size: 10px; zoom: 1; }
+      nav, #projects, #contact, script, .absolute { display: none !important; }
+      main { padding: 0 !important; }
+      section { max-width: none !important; padding: 4px 0 !important; break-inside: avoid; }
+      .grid { gap: 6px !important; }
+      .space-y-8 > :not([hidden]) ~ :not([hidden]),
+      .space-y-6 > :not([hidden]) ~ :not([hidden]),
+      .space-y-4 > :not([hidden]) ~ :not([hidden]),
+      .space-y-3 > :not([hidden]) ~ :not([hidden]),
+      .space-y-2 > :not([hidden]) ~ :not([hidden]) { margin-top: 4px !important; }
+      h1 { font-size: 28px !important; margin-bottom: 4px !important; line-height: 1 !important; }
+      h2 { font-size: 15px !important; margin-bottom: 5px !important; line-height: 1.12 !important; }
+      h3 { font-size: 12px !important; margin-bottom: 4px !important; line-height: 1.15 !important; }
+      p, li, a, span, div { line-height: 1.25 !important; }
+      p { margin: 0 !important; }
+      ul { margin: 0 !important; padding-left: 12px !important; }
+      li { margin: 0 !important; }
+      .p-6, .md\:p-8, .p-4, .p-5 { padding: 4px !important; }
+      .mb-10, .mb-8, .mb-6, .mb-5, .mb-4, .mb-3, .mb-2, .mb-1 { margin-bottom: 3px !important; }
+      .mt-6, .mt-8, .mt-2, .mt-1 { margin-top: 3px !important; }
+      .pt-8, .pt-6, .pt-4 { padding-top: 3px !important; }
+      .rounded-2xl, .rounded-xl, .rounded-lg, .rounded-full { border-radius: 0 !important; }
+      .soft-shadow, .hover-lift { box-shadow: none !important; }
+      .border, .border-y, .border-t, .border-b,
+      [class*="border-"] { border-color: transparent !important; border-width: 0 !important; }
+      .bg-white, .bg-slate-50, .bg-slate-100, .bg-emerald-50 { background: transparent !important; }
+      .lg\:grid-cols-12, .md\:grid-cols-2, .sm\:grid-cols-3 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+      .lg\:col-span-7, .lg\:col-span-5, .lg\:col-span-4, .lg\:col-span-8, .md\:col-span-2 { grid-column: span 1 / span 1 !important; }
+      main#resume > section:first-of-type > div { display: block !important; }
+      main#resume > section:first-of-type > div > div:nth-child(2) { display: none !important; }
+      main#resume img { display: none !important; }
+      #resume img { width: 72px !important; height: 72px !important; }
+      #resume .w-44, #resume .sm\:w-52 { width: 72px !important; }
+      #resume .h-44, #resume .sm\:h-52 { height: 72px !important; }
+      #skills .grid,
+      #experience ul,
+      #education ul { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+      #skills .flex { gap: 3px !important; }
+      #skills span[class*="px-3"] { padding: 0 4px 0 0 !important; font-size: 10px !important; }
+      #skills span[class*="px-3"]::after { content: " "; }
+      #skills .bg-white { padding-left: 0 !important; padding-right: 0 !important; }
+      #education { display: block !important; }
+      #education > div { display: grid !important; grid-template-columns: 0.8fr 1.2fr !important; gap: 8px !important; }
+      .selection\:bg-brand-primary { background: #fff !important; }
+    }
   </style>
 <script type="application/ld+json">
 {
@@ -116,9 +163,144 @@
   "email": "mailto:xunac131@gmail.com",
   "telephone": "+8615890670156",
   "sameAs": ["https://github.com/Uneac1"],
-  "knowsAbout": ["AI工具应用", "自动化提效", "设计美工", "电商视觉", "数据处理"]
+  "knowsAbout": ["Agent开发", "AI工作流", "自动化工具", "插件脚本", "接口调用", "数据处理"]
 }
 </script>
+<style data-purpose="pdf-v0.0312-print-overrides">
+  @media print {
+    main#resume > section:first-of-type { padding-bottom: 5px !important; }
+    main#resume > section:first-of-type > div > div:first-child { display: block !important; }
+    main#resume > section:first-of-type .grid.grid-cols-1.sm\:grid-cols-3 {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      align-items: flex-start !important;
+      justify-content: flex-start !important;
+      gap: 18px !important;
+      width: max-content !important;
+      max-width: 100% !important;
+      padding-top: 8px !important;
+    }
+    main#resume > section:first-of-type .grid.grid-cols-1.sm\:grid-cols-3 > div {
+      width: auto !important;
+      min-width: 86px !important;
+      max-width: 150px !important;
+      padding: 5px 6px !important;
+      border: 0 !important;
+      background: transparent !important;
+    }
+    main#resume > section:first-of-type .grid.grid-cols-1.sm\:grid-cols-3 > div:nth-child(3) {
+      min-width: 150px !important;
+      max-width: 190px !important;
+    }
+    #strengths { padding-top: 5px !important; padding-bottom: 5px !important; }
+    #strengths > div {
+      width: 100% !important;
+      padding: 4px 0 !important;
+      border: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+    #strengths ul {
+      display: grid !important;
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      gap: 3px 12px !important;
+    }
+    #skills { padding-top: 6px !important; padding-bottom: 6px !important; }
+    #skills > .mb-10 { margin-bottom: 5px !important; display: block !important; }
+    #skills > .mb-10 > div:last-child { display: none !important; }
+    #skills > div.grid {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 5px !important;
+    }
+    #skills > div.grid > div {
+      width: 100% !important;
+      padding: 4px 0 !important;
+      border: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      page-break-inside: avoid !important;
+    }
+    #skills h3 {
+      margin-bottom: 1px !important;
+      color: #64748b !important;
+      font-size: 8px !important;
+      font-weight: 600 !important;
+      letter-spacing: 0 !important;
+    }
+    #skills .flex.flex-wrap { gap: 6px !important; }
+    #skills span[class*="px-3"] {
+      display: inline !important;
+      padding: 0 8px 0 0 !important;
+      border: 0 !important;
+      background: transparent !important;
+      color: #0f172a !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      line-height: 1.25 !important;
+    }
+    #experience { padding-top: 8px !important; padding-bottom: 6px !important; }
+    #experience > .mb-10 { margin-bottom: 4px !important; }
+    #experience article {
+      padding: 6px 0 !important;
+      border: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+    #experience article > div:first-child {
+      display: grid !important;
+      grid-template-columns: 1fr auto !important;
+      align-items: start !important;
+      gap: 12px !important;
+      margin-bottom: 5px !important;
+    }
+    #experience h3 {
+      font-size: 13px !important;
+      margin-bottom: 2px !important;
+      color: #0f172a !important;
+    }
+    #experience article p {
+      color: #475569 !important;
+      font-size: 9px !important;
+    }
+    #experience article > div:first-child > span {
+      padding: 0 !important;
+      border: 0 !important;
+      background: transparent !important;
+      color: #64748b !important;
+      font-size: 8px !important;
+      white-space: nowrap !important;
+    }
+    #experience ul {
+      gap: 3px 18px !important;
+      padding-left: 0 !important;
+      list-style: none !important;
+    }
+    #experience li {
+      color: #1e293b !important;
+      font-size: 9px !important;
+    }
+    #education { padding-top: 8px !important; padding-bottom: 6px !important; }
+    #education > div {
+      display: block !important;
+    }
+    #education > div > div {
+      width: 100% !important;
+      padding: 4px 0 !important;
+      border: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+    ul.list-disc {
+      list-style: none !important;
+      padding-left: 0 !important;
+    }
+    ul.list-disc li::marker {
+      content: "" !important;
+    }
+  }
+</style>
 </head>
 <body class="bg-[#f8fafc] text-slate-800 font-sans antialiased selection:bg-brand-primary selection:text-white" data-lang="zh">
 <!-- BEGIN: Navigation -->
@@ -127,19 +309,18 @@
 <div class="flex justify-between items-center h-16">
 <div class="flex-shrink-0 flex items-center gap-3">
 <div class="ml-4 pl-4 border-l border-slate-300 hidden md:block">
-<span class="text-xs font-medium text-slate-500 tracking-widest uppercase"><span class="lang-zh">个人作品集</span><span class="lang-en">Portfolio</span></span>
 </div>
 </div>
 <div class="hidden md:flex space-x-8">
-<a class="route-pill text-slate-600 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="/home" data-route="/home" data-target="resume"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a>
-<a class="route-pill text-slate-500 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="/projects" data-route="/projects" data-target="projects"><span class="lang-zh">项目</span><span class="lang-en">Projects</span></a>
+<a class="route-pill text-slate-600 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="#resume"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a>
+<a class="route-pill text-slate-500 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="#projects"><span class="lang-zh">项目</span><span class="lang-en">Projects</span></a>
 <a class="text-slate-500 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="#experience"><span class="lang-zh">经历</span><span class="lang-en">Experience</span></a>
 <a class="text-slate-500 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="#skills"><span class="lang-zh">技能</span><span class="lang-en">Skills</span></a>
 <a class="text-slate-500 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="#contact"><span class="lang-zh">联系</span><span class="lang-en">Contact</span></a>
 </div>
 <div class="flex items-center gap-2 sm:gap-4 min-w-0">
 <button id="langToggle" type="button" class="text-xs font-medium text-slate-500 hover:text-slate-800 transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" aria-label="切换语言，当前为中文" aria-pressed="false">中 / EN</button>
-<a class="hidden min-[390px]:inline-flex text-xs font-medium text-slate-600 hover:text-slate-900 px-3 py-1.5 rounded-full border border-slate-300 hover:border-slate-400 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="/home" data-route="/home" data-target="resume"><span class="lang-zh">查看简历</span><span class="lang-en">Resume</span></a>
+<a class="hidden min-[390px]:inline-flex text-xs font-medium text-slate-600 hover:text-slate-900 px-3 py-1.5 rounded-full border border-slate-300 hover:border-slate-400 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./PDF/oneself.pdf" download="魏敬沅-Agent开发简历-v0.0312.pdf"><span class="lang-zh">查看简历</span><span class="lang-en">Resume</span></a>
 <a class="text-xs font-medium text-white bg-slate-800 hover:bg-slate-700 px-4 py-1.5 rounded-full shadow-sm hover:shadow transition-all whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="#contact"><span class="lang-zh">立即联系</span><span class="lang-en">Contact</span></a>
 </div>
 </div>
@@ -157,28 +338,15 @@
 <span class="lang-zh">3 年工作经验 · 求职中</span><span class="lang-en">3 Years Experience · Open to Work</span>
 </span>
 <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 border border-slate-200">
-<span class="lang-zh">AI / 自动化 / 电商视觉</span><span class="lang-en">AI / Automation / E-commerce Visuals</span>
+<span class="lang-zh">Agent 开发 / AI 工作流 / 自动化工具</span><span class="lang-en">Agent Development / AI Workflow / Automation Tools</span>
 </span>
 </div>
 <div>
-<p class="text-xs font-semibold text-brand-primary uppercase tracking-widest mb-2"><span class="lang-zh">Personal Portfolio 个人作品集</span><span class="lang-en">Personal Portfolio</span></p>
 <h1 id="hero-title" class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-4">魏敬沅</h1>
-<h2 class="text-xl md:text-2xl font-medium text-slate-600"><span class="lang-zh">AI 工具应用与电商流程自动化专员 / 设计执行与运营提效方向</span><span class="lang-en">AI Tool Application & E-commerce Workflow Automation / Design Execution & Operations Efficiency</span></h2>
+<h2 class="text-xl md:text-2xl font-medium text-slate-600"><span class="lang-zh">Agent 开发与 AI 工作流自动化 / 业务工具落地方向</span><span class="lang-en">Agent Development & AI Workflow Automation / Business Tool Delivery</span></h2>
 </div>
 <div class="space-y-4 text-slate-600 leading-relaxed max-w-2xl">
-<p><span class="lang-zh">具备电商运营、开发/工具支持、电商美工、数据文员与流程优化实践经验，熟悉产品上下架、链接上新、合规质检、活动推广、图片样机、店铺端排版与表格数据处理，能够从实际业务中识别重复环节，并通过脚本、插件、接口调用和 SOP 自动化提升执行效率。</span><span class="lang-en">Experienced in e-commerce operations, development/tool support, e-commerce visuals, office workflows, AI tools and automation. Able to identify repetitive low-efficiency steps in real work and improve execution through scripts, plugins, API calls, AI tools and SOP automation.</span></p>
-<p><span class="lang-zh">熟悉电商图片处理、商品上架、数据采集、表单处理、AI生成工具和基础开发流程，具备较强学习能力和工具整合能力。</span><span class="lang-en">Familiar with e-commerce image processing, product listing, data collection, form processing, AI generation tools and basic development workflows, with strong learning and tool-integration ability.</span></p>
-</div>
-<div class="grid grid-cols-1 min-[420px]:grid-cols-2 sm:flex sm:flex-wrap items-stretch sm:items-center gap-3 sm:gap-4 pt-4">
-<a class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-sm font-medium rounded-full text-white bg-brand-primary hover:bg-brand-hover shadow-sm hover:shadow-md transition-all w-full sm:w-auto whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="#projects">
-<span class="lang-zh">查看项目经历</span><span class="lang-en">View Projects</span>
-</a>
-<a class="inline-flex justify-center items-center px-6 py-3 border border-slate-300 text-sm font-medium rounded-full text-slate-700 bg-white hover:bg-slate-50 shadow-sm transition-all w-full sm:w-auto whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="mailto:xunac131@gmail.com">
-<span class="lang-zh">邮件联系</span><span class="lang-en">Email Me</span>
-</a>
-<a class="text-sm font-medium text-slate-500 hover:text-slate-800 transition-colors min-[420px]:col-span-2 sm:col-span-auto break-words ml-0 sm:ml-2 inline-flex items-center rounded px-1 py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="https://chwedl.com" target="_blank" rel="noopener noreferrer" aria-label="打开个人站，新窗口">
-<span class="lang-zh">打开个人站 →</span><span class="lang-en">Open Website →</span>
-</a>
+<p><span class="lang-zh">关注 Agent 开发与 AI 工作流落地，持续跟踪国内外模型和 AI 技术趋势，能把重复业务流程拆成脚本、插件、接口和数据处理步骤，做成提升效率的自动化工具。</span><span class="lang-en">Focused on Agent development and AI workflow delivery, tracking model and AI technology trends while turning repeated business workflows into automation tools with scripts, plugins, APIs and data handling.</span></p>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
 <div class="bg-white p-4 rounded-2xl soft-shadow border border-slate-100">
@@ -191,7 +359,7 @@
 </div>
 <div class="bg-white p-4 rounded-2xl soft-shadow border border-slate-100">
 <div class="text-xs text-slate-500 mb-1"><span class="lang-zh">核心标签</span><span class="lang-en">Core Tags</span></div>
-<div class="text-sm font-semibold text-slate-900"><span class="lang-zh">工具化 · 自动化 · 插件化</span><span class="lang-en">Tooling · Automation · Plugins</span></div>
+<div class="text-sm font-semibold text-slate-900"><span class="lang-zh">Agent · 工作流 · 工具调用</span><span class="lang-en">Agents · Workflows · Tool Calling</span></div>
 </div>
 </div>
 </div>
@@ -204,19 +372,18 @@
 <img class="w-44 h-44 sm:w-52 sm:h-52 rounded-full border border-slate-200 object-cover bg-white shadow-sm" src="https://avatars.githubusercontent.com/u/213265617?s=400&amp;u=f53e1723f55a964d5b4d7a96582349fca11f28b1&amp;v=4" alt="魏敬沅头像" loading="lazy" referrerpolicy="no-referrer">
 </div>
 <div class="flex justify-between items-end mb-4">
-<div class="text-sm font-medium text-slate-700"><span class="lang-zh">AI / 自动化 / 电商视觉 / 数据处理</span><span class="lang-en">AI / Automation / E-commerce Visuals / Data</span></div>
-<div class="text-xs text-slate-600"><span class="lang-zh">Updated 2026 更新于 2026 年</span><span class="lang-en">Updated 2026</span></div>
+<div class="text-sm font-medium text-slate-700"><span class="lang-zh">Agent / 脚本 / 插件 / 数据</span><span class="lang-en">Agents / Scripts / Plugins / Data</span></div>
 </div>
 <div class="w-full bg-slate-100 rounded-full h-1.5 mb-4">
 <div class="bg-slate-300 h-1.5 rounded-full w-4/5"></div>
 </div>
 <p class="text-xs text-slate-500 leading-relaxed mb-6">
-<span class="lang-zh">以视觉表达驱动业务落地，用自动化与 AI 工具构建可持续的效率优势。</span><span class="lang-en">Driving business delivery through visual execution while building sustainable efficiency with automation and AI tools.</span>
+<span class="lang-zh">从业务问题出发，做能跑、能复用、能维护的小工具。</span><span class="lang-en">Starting from business problems, building small tools that run, repeat and stay maintainable.</span>
 </p>
 <div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-slate-50 border border-slate-200 rounded-full text-[10px] text-slate-600">SOP</span>
-<span class="px-3 py-1 bg-slate-50 border border-slate-200 rounded-full text-[10px] text-slate-600"><span class="lang-zh">插件流程</span><span class="lang-en">Plugin Flow</span></span>
-<span class="px-3 py-1 bg-slate-50 border border-slate-200 rounded-full text-[10px] text-slate-600"><span class="lang-zh">数据驱动</span><span class="lang-en">Data Driven</span></span>
+<span class="px-3 py-1 bg-slate-50 border border-slate-200 rounded-full text-[10px] text-slate-600">Agent</span>
+<span class="px-3 py-1 bg-slate-50 border border-slate-200 rounded-full text-[10px] text-slate-600"><span class="lang-zh">工具调用</span><span class="lang-en">Tool Calling</span></span>
+<span class="px-3 py-1 bg-slate-50 border border-slate-200 rounded-full text-[10px] text-slate-600"><span class="lang-zh">工作流编排</span><span class="lang-en">Workflow Orchestration</span></span>
 </div>
 </div>
 </div>
@@ -224,77 +391,101 @@
 </section>
 <!-- END: Hero Section -->
 
-<!-- BEGIN: Business Scenario Capabilities -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="capabilities" aria-labelledby="capabilities-title">
+<!-- BEGIN: Tool Stack -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="skills" aria-labelledby="capabilities-title">
 <div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
 <div>
-<p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2"><span class="lang-zh">Business Scenario Capabilities 业务场景能力</span><span class="lang-en">Business Scenario Capabilities</span></p>
-<h2 id="capabilities-title" class="text-3xl font-bold text-slate-900 mb-4"><span class="lang-zh">把工具落到真实业务场景</span><span class="lang-en">Turning Tools into Business Outcomes</span></h2>
+<h2 id="capabilities-title" class="text-3xl font-semibold text-slate-500 uppercase tracking-widest mb-4"><span class="lang-zh">Tool Stack 工具栈</span><span class="lang-en">Tool Stack</span></h2>
 <p class="text-sm text-slate-600 max-w-2xl leading-relaxed">
-<span class="lang-zh">围绕电商运营、视觉生产、数据处理和内部流程，将重复任务拆解为可执行、可复用、可自动化的业务流程。</span><span class="lang-en">Focused on e-commerce operations, visual production, data processing and internal workflows, turning repeated tasks into executable, reusable and automatable processes.</span>
+<span class="lang-zh">按实际使用场景分类，区分 AI 开发、设计生成、办公数据与自动化工具。</span><span class="lang-en">Grouped by real usage: AI development, design/generation, office data and automation tools.</span>
 </p>
 </div>
-<div class="text-xs text-slate-600 text-right"><span class="lang-zh">先看能解决什么问题，再看使用什么工具</span><span class="lang-en">What problems can be solved before what tools are used</span></div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<div class="gradient-border p-6 hover-lift bg-white">
-<div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-[10px] font-bold text-slate-600 mb-4">LIST</div>
-<h3 class="text-base font-semibold text-slate-900 mb-2"><span class="lang-zh">电商商品上架提效</span><span class="lang-en">E-commerce Listing Efficiency</span></h3>
-<p class="text-sm text-slate-600 leading-relaxed mb-4"><span class="lang-zh">商品资料整理、Excel 数据维护、自动填表、批量上架和状态核对，把持续人工操作压缩为数据维护与异常检查。</span><span class="lang-en">Product data organization, Excel maintenance, auto-fill, batch listing and status checks, reducing continuous manual work into data maintenance and exception review.</span></p>
-<span class="px-2 py-1 bg-emerald-50 border border-emerald-200 rounded text-[10px] text-emerald-700"><span class="lang-zh">运营提效</span><span class="lang-en">Operations Efficiency</span></span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow md:col-span-2">
+<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">Agent 与 AI 开发</span><span class="lang-en">Agent & AI Development</span></h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Claude Code</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Codex</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">OpenClaw</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Hermes</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Gemini</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Python</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Vue</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Electron</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Next.js</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">HTML/CSS/JS</span>
 </div>
-<div class="gradient-border p-6 hover-lift bg-white">
-<div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-[10px] font-bold text-slate-600 mb-4">IMG</div>
-<h3 class="text-base font-semibold text-slate-900 mb-2"><span class="lang-zh">商品图与样机批量生产</span><span class="lang-en">Batch Visual Production</span></h3>
-<p class="text-sm text-slate-600 leading-relaxed mb-4"><span class="lang-zh">修图、套图、样机生成、批量导出与版式一致性检查，减少重复套图、导出和人工校对时间。</span><span class="lang-en">Image editing, mockups, batch export and layout consistency checks, reducing repeated compositing, exporting and manual review time.</span></p>
-<span class="px-2 py-1 bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500"><span class="lang-zh">视觉生产</span><span class="lang-en">Visual Output</span></span>
 </div>
-<div class="gradient-border p-6 hover-lift bg-white">
-<div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-[10px] font-bold text-slate-600 mb-4">DATA</div>
-<h3 class="text-base font-semibold text-slate-900 mb-2"><span class="lang-zh">数据采集与表单自动化</span><span class="lang-en">Data Collection & Form Automation</span></h3>
-<p class="text-sm text-slate-600 leading-relaxed mb-4"><span class="lang-zh">围绕商品信息、质检报告、合规证明和网页表单做采集与回填，减少查找、复制、录入和校对成本。</span><span class="lang-en">Collecting and filling product information, inspection reports, compliance certificates and web forms to reduce searching, copying, entry and review costs.</span></p>
-<span class="px-2 py-1 bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500"><span class="lang-zh">数据流程</span><span class="lang-en">Data Flow</span></span>
+<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow md:col-span-2">
+<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">设计与后期</span><span class="lang-en">Design & Post-production</span></h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">MidJourney</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Stable Diffusion</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">image banana</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">可灵</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">即梦</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">image2.0</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">seedance2.0</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Photoshop</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">CDR</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Lightroom</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">DaVinci</span>
 </div>
-<div class="gradient-border p-6 hover-lift bg-white">
-<div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-[10px] font-bold text-slate-600 mb-4">AI</div>
-<h3 class="text-base font-semibold text-slate-900 mb-2"><span class="lang-zh">AI 内容与视觉辅助生产</span><span class="lang-en">AI-assisted Content & Visuals</span></h3>
-<p class="text-sm text-slate-600 leading-relaxed mb-4"><span class="lang-zh">用提示词、生成工具和开发辅助完成初稿、素材变体、内容处理和脚本方案，提高启动速度。</span><span class="lang-en">Using prompts, generation tools and development support for drafts, asset variants, content processing and scripting plans to accelerate starts.</span></p>
-<span class="px-2 py-1 bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500"><span class="lang-zh">AI 辅助</span><span class="lang-en">AI Support</span></span>
 </div>
-<div class="gradient-border p-6 hover-lift bg-white">
-<div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-[10px] font-bold text-slate-600 mb-4">SOP</div>
-<h3 class="text-base font-semibold text-slate-900 mb-2"><span class="lang-zh">内部 SOP 工具化</span><span class="lang-en">Internal SOP Tooling</span></h3>
-<p class="text-sm text-slate-600 leading-relaxed mb-4"><span class="lang-zh">把团队重复流程拆成步骤，用脚本、插件、API 或表格驱动执行，让流程可复用、可交接、可维护。</span><span class="lang-en">Breaking repeated team workflows into steps and using scripts, plugins, APIs or spreadsheets to make processes reusable, transferable and maintainable.</span></p>
-<span class="px-2 py-1 bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500"><span class="lang-zh">流程沉淀</span><span class="lang-en">Process Assets</span></span>
+<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow">
+<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">办公与数据</span><span class="lang-en">Office & Data</span></h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">WPS</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Excel</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">PPT</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Word</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">多维表格</span><span class="lang-en">Multi-dimensional Tables</span></span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">公式函数</span><span class="lang-en">Formulas</span></span>
 </div>
-<div class="gradient-border p-6 hover-lift bg-white">
-<div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-[10px] font-bold text-slate-600 mb-4">OPS</div>
-<h3 class="text-base font-semibold text-slate-900 mb-2"><span class="lang-zh">基础部署与环境维护</span><span class="lang-en">Basic Deployment & Environment</span></h3>
-<p class="text-sm text-slate-600 leading-relaxed mb-4"><span class="lang-zh">处理 SaaS 搭建、VPS、局域网、系统安装与基础运维，支撑轻量工具上线和稳定运行。</span><span class="lang-en">Handling SaaS setup, VPS, LAN, system installation and basic operations to support lightweight tools going online and running steadily.</span></p>
-<span class="px-2 py-1 bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500"><span class="lang-zh">基础运维</span><span class="lang-en">Basic Ops</span></span>
+</div>
+<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow">
+<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">自动化与接口</span><span class="lang-en">Automation & APIs</span></h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">浏览器插件</span><span class="lang-en">Browser Plugins</span></span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">API</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">爬虫</span><span class="lang-en">Crawler</span></span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">数据采集</span><span class="lang-en">Data Collection</span></span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">自动填表</span><span class="lang-en">Auto Fill</span></span>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow md:col-span-2">
+<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">部署与环境</span><span class="lang-en">Deployment & Environment</span></h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">系统安装与维护</span><span class="lang-en">System Installation & Maintenance</span></span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">电脑维护</span><span class="lang-en">Computer Maintenance</span></span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">局域网 SaaS 搭建</span><span class="lang-en">LAN SaaS Setup</span></span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">服务器部署</span><span class="lang-en">Server Deployment</span></span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">CPA</span>
+<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">VPS 运维</span><span class="lang-en">VPS Operations</span></span>
+</div>
 </div>
 </div>
 </section>
-<!-- END: Business Scenario Capabilities -->
+<!-- END: Tool Stack -->
 
 <!-- BEGIN: Projects -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="projects" aria-labelledby="projects-title">
 <div class="mb-10">
-<p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2"><span class="lang-zh">Project Cases 项目案例</span><span class="lang-en">Project Cases</span></p>
-<h2 id="projects-title" class="text-3xl font-bold text-slate-900 mb-4"><span class="lang-zh">用固定案例结构展示真实改造</span><span class="lang-en">Real Improvements Shown as Case Studies</span></h2>
-<p class="text-sm text-slate-600 max-w-2xl leading-relaxed"><span class="lang-zh">每个项目按问题、做法、结果和使用工具呈现，重点展示从重复工作到可执行工具的转化过程。</span><span class="lang-en">Each project is structured by problem, approach, result and tools, showing how repeated work was converted into executable tools.</span></p>
+<h2 id="projects-title" class="text-3xl font-semibold text-slate-500 uppercase tracking-widest mb-4"><span class="lang-zh">Project Cases 项目案例</span><span class="lang-en">Project Cases</span></h2>
+<p class="text-sm text-slate-600 max-w-2xl leading-relaxed"><span class="lang-zh">保留真实做过的自动化、插件、数据和页面项目。</span><span class="lang-en">Real automation, plugin, data and page projects.</span></p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<a class="block bg-white rounded-2xl p-6 md:p-8 border border-brand-primary/30 soft-shadow hover-lift md:col-span-2 relative overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./html/shangjia.html" aria-label="查看电商数据驱动自动上架工具详情页">
+<a class="block bg-white rounded-2xl p-6 md:p-8 border border-brand-primary/30 soft-shadow hover-lift md:col-span-2 relative overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./html/shangjia.html" aria-label="查看业务流程 Agent 化自动执行案例详情页">
 <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-8">
 <div>
 <div class="flex flex-wrap gap-2 mb-4">
 <span class="px-2 py-1 bg-brand-primary text-white rounded text-[10px] font-semibold"><span class="lang-zh">主案例</span><span class="lang-en">Main Case</span></span>
-<span class="px-2 py-1 bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500">Excel</span>
-<span class="px-2 py-1 bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500">Automation</span>
+<span class="px-2 py-1 bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500">Agent Flow</span>
+<span class="px-2 py-1 bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500">Tool Calling</span>
 </div>
-<h3 class="text-2xl font-bold text-slate-900"><span class="lang-zh">电商数据驱动自动上架工具</span><span class="lang-en">E-commerce Data-driven Auto Listing Tool</span></h3>
-<p class="text-sm text-slate-500 mt-2"><span class="lang-zh">SOP 自动化 / 电商流程工具 / 数据处理</span><span class="lang-en">SOP Automation / E-commerce Workflow Tool / Data Processing</span></p>
+<h3 class="text-2xl font-bold text-slate-900"><span class="lang-zh">业务流程 Agent 化自动执行工具</span><span class="lang-en">Business Workflow Agent Automation Tool</span></h3>
+<p class="text-sm text-slate-500 mt-2"><span class="lang-zh">Agent 任务拆解 / SOP 自动化 / 表格驱动 / 异常复核</span><span class="lang-en">Agent Task Decomposition / SOP Automation / Spreadsheet-driven Flow / Exception Review</span></p>
 </div>
 <div class="grid grid-cols-3 gap-3 min-w-full lg:min-w-[360px]">
 <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
@@ -311,19 +502,19 @@
 <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm leading-relaxed">
 <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
 <p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2"><span class="lang-zh">问题</span><span class="lang-en">Problem</span></p>
-<p class="text-slate-600"><span class="lang-zh">商品上架需要人工长时间持续操作，商品信息读取、处理、填写和核对都依赖重复手动步骤。</span><span class="lang-en">Product listing required long continuous manual work, with reading, processing, filling and checking all depending on repeated manual steps.</span></p>
+<p class="text-slate-600"><span class="lang-zh">流程依赖重复手动操作，耗时长，容易漏填错填。</span><span class="lang-en">The workflow relied on repeated manual actions, taking time and risking mistakes.</span></p>
 </div>
 <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
 <p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2"><span class="lang-zh">做法</span><span class="lang-en">Approach</span></p>
-<p class="text-slate-600"><span class="lang-zh">以 Excel 数据为入口，读取商品信息，加入伪随机处理和模拟人工执行，将上架 SOP 改造为工具流程。</span><span class="lang-en">Used Excel as the data entry point, read product information, added pseudo-random handling and human-like execution, then converted the listing SOP into a tool flow.</span></p>
+<p class="text-slate-600"><span class="lang-zh">用表格驱动脚本执行，加入状态记录和异常检查。</span><span class="lang-en">Used spreadsheets to drive scripts, with status records and exception checks.</span></p>
 </div>
 <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
 <p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2"><span class="lang-zh">结果</span><span class="lang-en">Result</span></p>
-<p class="text-slate-600"><span class="lang-zh">日常人工从约 6 小时缩短到约 30 分钟，主要工作变为维护 Excel 数据和检查异常状态。</span><span class="lang-en">Daily manual work dropped from about 6 hours to about 30 minutes, mainly maintaining Excel data and checking exceptions.</span></p>
+<p class="text-slate-600"><span class="lang-zh">人工从约 6 小时缩短到约 30 分钟。</span><span class="lang-en">Manual work dropped from about 6 hours to about 30 minutes.</span></p>
 </div>
 <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
 <p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2"><span class="lang-zh">使用工具</span><span class="lang-en">Tools</span></p>
-<p class="text-slate-600">Excel / SOP / <span class="lang-zh">自动化脚本 / 模拟人工执行</span><span class="lang-en">Automation Script / Human-like Execution</span></p>
+<p class="text-slate-600">Agent Flow / Excel / SOP / <span class="lang-zh">自动化脚本 / 模拟人工执行</span><span class="lang-en">Automation Script / Human-like Execution</span></p>
 </div>
 </div>
 </a>
@@ -385,12 +576,12 @@
 <span class="sr-only">/baodanya</span>
 </a>
 <article class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow hover-lift">
-<div class="flex justify-between gap-4 mb-5"><div><h3 class="text-lg font-bold text-slate-900"><span class="lang-zh">Codex Skill 与 Prompt 工作流</span><span class="lang-en">Codex Skill and Prompt Workflow</span></h3><p class="text-xs text-slate-500 mt-1"><span class="lang-zh">Codex 插件 / AI 工作流 / 自动化爬取</span><span class="lang-en">Codex Plugin / AI Workflow / Automated Crawling</span></p></div><span class="px-2 py-1 h-fit bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500">AI</span></div>
+<div class="flex justify-between gap-4 mb-5"><div><h3 class="text-lg font-bold text-slate-900"><span class="lang-zh">Codex Skill 与 Agent 工作流</span><span class="lang-en">Codex Skill and Agent Workflow</span></h3><p class="text-xs text-slate-500 mt-1"><span class="lang-zh">Agent 开发 / Skill 封装 / Prompt 工作流 / 自动化爬取</span><span class="lang-en">Agent Development / Skill Packaging / Prompt Workflow / Automated Crawling</span></p></div><span class="px-2 py-1 h-fit bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500">Agent</span></div>
 <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
-<div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">问题</span><span class="lang-en">Problem</span></p><p><span class="lang-zh">重复内容处理、数据抓取和接口封装任务需要频繁组合 AI 工具、脚本和流程说明。</span><span class="lang-en">Repeated content processing, data crawling and API encapsulation tasks required frequent combinations of AI tools, scripts and workflow instructions.</span></p></div>
-<div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">做法</span><span class="lang-en">Approach</span></p><p><span class="lang-zh">用 Codex、Claude Code、Skill 和 Prompt 建立可复用执行链路，让输入、处理和输出更稳定。</span><span class="lang-en">Used Codex, Claude Code, Skills and Prompts to build reusable execution chains, making input, processing and output more stable.</span></p></div>
-<div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">结果</span><span class="lang-en">Result</span></p><p><span class="lang-zh">能按任务快速组合 AI、脚本和接口，提高开发辅助、内容处理和数据处理效率。</span><span class="lang-en">Can quickly combine AI, scripts and APIs per task to improve development support, content processing and data handling efficiency.</span></p></div>
-<div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">使用工具</span><span class="lang-en">Tools</span></p><p>Codex / Claude Code / Skill / Prompt / API / <span class="lang-zh">爬虫</span><span class="lang-en">Crawler</span></p></div>
+<div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">问题</span><span class="lang-en">Problem</span></p><p><span class="lang-zh">重复内容处理、数据抓取、接口封装和页面改造任务，需要频繁组织上下文、调用工具并校验输出。</span><span class="lang-en">Repeated content processing, data crawling, API wrapping and page modification tasks required frequent context organization, tool calls and output checks.</span></p></div>
+<div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">做法</span><span class="lang-en">Approach</span></p><p><span class="lang-zh">用 Codex、Claude Code、Skill 和 Prompt 建立可复用 Agent 执行链路，把任务说明、约束、脚本和验收标准沉淀下来。</span><span class="lang-en">Used Codex, Claude Code, Skills and Prompts to build reusable Agent execution chains, preserving task instructions, constraints, scripts and acceptance criteria.</span></p></div>
+<div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">结果</span><span class="lang-en">Result</span></p><p><span class="lang-zh">能按任务快速组合 AI、脚本、接口和浏览器操作，提高开发辅助、内容处理和数据处理效率。</span><span class="lang-en">Can quickly combine AI, scripts, APIs and browser actions per task to improve development support, content processing and data handling efficiency.</span></p></div>
+<div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">使用工具</span><span class="lang-en">Tools</span></p><p>Codex / Claude Code / Skill / Prompt / API / <span class="lang-zh">爬虫 / 浏览器自动化</span><span class="lang-en">Crawler / Browser Automation</span></p></div>
 </div>
 </article>
 </div>
@@ -406,8 +597,8 @@
 <div class="space-y-6">
 <article class="bg-white rounded-2xl p-6 border border-brand-primary/20 soft-shadow">
 <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
-<div><h3 class="text-lg font-bold text-slate-900"><span class="lang-zh">电商运营｜开发｜当前岗位</span><span class="lang-en">E-commerce Operations | Development | Current Role</span></h3><p class="text-xs text-slate-500 mt-1"><span class="lang-zh">产品上下架 / 合规质检 / 活动推广 / 图片样机 / 店铺端排版</span><span class="lang-en">Product Listing / Compliance & QC / Campaign Promotion / Mockups / Store Layout</span></p></div>
-<span class="px-3 py-1 bg-emerald-50 border border-emerald-200 rounded-full text-xs text-emerald-700">2026.03 - <span class="lang-zh">至今</span><span class="lang-en">Present</span></span>
+<div><h3 class="text-lg font-bold text-slate-900"><span class="lang-zh">电商运营｜开发</span><span class="lang-en">E-commerce Operations | Development</span></h3><p class="text-xs text-slate-500 mt-1"><span class="lang-zh">产品上下架 / 合规质检 / 活动推广 / 图片样机 / 店铺端排版</span><span class="lang-en">Product Listing / Compliance & QC / Campaign Promotion / Mockups / Store Layout</span></p></div>
+<span class="px-3 py-1 bg-emerald-50 border border-emerald-200 rounded-full text-xs text-emerald-700">2026.03 - 2026.06</span>
 </div>
 <ul class="space-y-2 md:space-y-0 md:grid md:grid-cols-2 gap-x-8 gap-y-2 text-sm text-slate-600 leading-relaxed list-disc pl-5">
 <li><span class="lang-zh">负责产品上下架、产品链接上新与基础商品信息维护，保障商品发布和页面状态正常。</span><span class="lang-en">Responsible for product listing and delisting, new product links and basic product information maintenance.</span></li>
@@ -448,76 +639,6 @@
 </section>
 <!-- END: Experience -->
 
-<!-- BEGIN: Tool Stack -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="skills" aria-labelledby="skills-title">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-<div class="lg:col-span-4">
-<p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2"><span class="lang-zh">Tool Stack 工具栈</span><span class="lang-en">Tool Stack</span></p>
-<h2 id="skills-title" class="text-3xl font-bold text-slate-900 mb-4"><span class="lang-zh">按工作链路整理工具</span><span class="lang-en">Tools Organized by Workflow</span></h2>
-<p class="text-sm text-slate-600 leading-relaxed mb-6"><span class="lang-zh">技能区只保留工具栈，用于设计生产、AI 辅助、数据处理、自动化执行与基础部署。</span><span class="lang-en">This section keeps only the tool stack for design production, AI assistance, data processing, automation execution and basic deployment.</span></p>
-<div class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
-<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-2"></span>
-<span class="lang-zh">工具按场景归类，避免能力区重复</span><span class="lang-en">Grouped by scenario without repeating capabilities</span>
-</div>
-</div>
-<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow">
-<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">AI 与生成</span><span class="lang-en">AI & Generation</span></h3>
-<div class="flex flex-wrap gap-3">
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Claude Code</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Codex</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">MidJourney</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Stable Diffusion</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">image banana</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">可灵</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">即梦</span>
-</div>
-</div>
-<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow">
-<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">视觉设计与后期</span><span class="lang-en">Design & Post-production</span></h3>
-<div class="flex flex-wrap gap-3">
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Photoshop</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">CDR</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Lightroom</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">DaVinci</span>
-</div>
-</div>
-<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow">
-<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">办公与数据</span><span class="lang-en">Office & Data</span></h3>
-<div class="flex flex-wrap gap-3">
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">WPS</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Excel</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">PPT</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Word</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">多维表格</span><span class="lang-en">Multi-dimensional Tables</span></span>
-</div>
-</div>
-<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow">
-<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">自动化与开发辅助</span><span class="lang-en">Automation & Dev Support</span></h3>
-<div class="flex flex-wrap gap-3">
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">浏览器插件</span><span class="lang-en">Browser Plugins</span></span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Prompt</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Skill</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">API</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">爬虫</span><span class="lang-en">Crawler</span></span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">数据采集</span><span class="lang-en">Data Collection</span></span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">自动填表</span><span class="lang-en">Auto Fill</span></span>
-</div>
-</div>
-<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow md:col-span-2">
-<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">部署与环境</span><span class="lang-en">Deployment & Environment</span></h3>
-<div class="flex flex-wrap gap-3">
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">VPS</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">SaaS</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Server Setup</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">LAN</span>
-<span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">系统安装与维护</span><span class="lang-en">System Installation & Maintenance</span></span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- END: Tool Stack -->
 
 <!-- BEGIN: Education and Strengths -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="education" aria-labelledby="education-title">
@@ -532,12 +653,12 @@
 </div>
 <div class="lg:col-span-8 bg-white rounded-2xl p-6 border border-slate-200 soft-shadow">
 <p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2"><span class="lang-zh">Strengths 个人优势</span><span class="lang-en">Personal Strengths</span></p>
-<h2 class="text-2xl font-bold text-slate-900 mb-6"><span class="lang-zh">学习、拆解、整合与落地</span><span class="lang-en">Learning, Breakdown, Integration and Delivery</span></h2>
+<h2 class="text-2xl font-bold text-slate-900 mb-6"><span class="lang-zh">学习、拆解、编排与落地</span><span class="lang-en">Learning, Breakdown, Orchestration and Delivery</span></h2>
 <ul class="space-y-3 md:space-y-0 md:grid md:grid-cols-2 gap-x-8 gap-y-3 text-sm text-slate-600 leading-relaxed list-disc pl-5">
-<li><span class="lang-zh">学习速度快，能快速获取并理解新工具、新流程和新知识。</span><span class="lang-en">Learns quickly and can rapidly understand new tools, workflows and knowledge.</span></li>
-<li><span class="lang-zh">能把重复工作拆解成流程，并进一步尝试工具化、自动化。</span><span class="lang-en">Can break repetitive work into processes and further turn them into tools or automation.</span></li>
-<li><span class="lang-zh">对数据、效率和工具组合敏感，善于用 AI 和自动化方式提升产出。</span><span class="lang-en">Sensitive to data, efficiency and tool combinations, and good at improving output with AI and automation.</span></li>
-<li><span class="lang-zh">具备设计、电商、办公、AI和基础开发的复合型实践经验。</span><span class="lang-en">Has combined practical experience across design, e-commerce, office work, AI and basic development.</span></li>
+<li><span class="lang-zh">学习速度快，能持续跟进最新 AI 技术趋势，并研究国内外模型能力差异。</span><span class="lang-en">Learns quickly, follows AI technology trends and studies capability differences across models.</span></li>
+<li><span class="lang-zh">能把重复工作拆解成 Agent 可执行步骤，并进一步工具化、自动化。</span><span class="lang-en">Can break repetitive work into Agent-executable steps and further turn them into tools or automation.</span></li>
+<li><span class="lang-zh">对数据、效率、上下文和工具组合敏感，善于把新模型能力转化为产品流程创新。</span><span class="lang-en">Sensitive to data, efficiency, context and tool combinations, and able to turn model capabilities into product workflow improvements.</span></li>
+<li><span class="lang-zh">具备 Agent 开发、设计、电商、办公、AI 和基础开发的复合型实践经验。</span><span class="lang-en">Has combined practical experience across Agent development, design, e-commerce, office work, AI and basic development.</span></li>
 <li><span class="lang-zh">具备自我拓展能力，能够独立研究工具、部署服务并维护基础环境。</span><span class="lang-en">Able to self-expand, independently research tools, deploy services and maintain basic environments.</span></li>
 </ul>
 </div>
@@ -551,7 +672,7 @@
 <div class="lg:col-span-5">
 <p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2"><span class="lang-zh">Contact 联系</span><span class="lang-en">Contact</span></p>
 <h2 id="contact-title" class="text-2xl font-bold text-slate-900 mb-3">魏敬沅 · Wei Jingyuan</h2>
-<p class="text-sm text-slate-600 leading-relaxed"><span class="lang-zh">AI 工具应用 / 电商流程自动化 / 设计执行。欢迎通过邮件、电话或 GitHub 联系岗位机会与项目合作。</span><span class="lang-en">AI tool application / e-commerce workflow automation / design execution. Open to role opportunities and project collaboration by email, phone or GitHub.</span></p>
+<p class="text-sm text-slate-600 leading-relaxed"><span class="lang-zh">Agent 开发 / AI 工作流自动化 / 业务工具落地。欢迎通过邮件、电话或 GitHub 联系岗位机会与项目合作。</span><span class="lang-en">Agent development / AI workflow automation / business tool delivery. Open to role opportunities and project collaboration by email, phone or GitHub.</span></p>
 </div>
 <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-4">
 <a class="rounded-xl border border-slate-200 p-4 hover:border-brand-primary hover:bg-slate-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="mailto:xunac131@gmail.com" aria-label="发送邮件到 xunac131@gmail.com">
@@ -569,8 +690,7 @@
 </div>
 </div>
 <div class="mt-8 pt-6 border-t border-slate-200 text-xs text-slate-500 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between">
-<span>Portfolio v0.0141</span>
-<span><span class="lang-zh">最后更新：2026 年</span><span class="lang-en">Updated 2026</span></span>
+<span>Portfolio v0.0251</span>
 </div>
 </div>
 </section>
