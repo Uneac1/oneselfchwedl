@@ -10,11 +10,11 @@
 <meta property="og:description" content="Agent 开发、AI 工作流编排、自动化工具、插件脚本与业务流程落地作品集。">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://chwedl.com/">
-<meta property="og:image" content="https://chwedl.com/img/tupiantif.png">
+<meta property="og:image" content="https://chwedl.com/tupiantif.png">
 <meta property="og:image:width" content="960">
 <meta property="og:image:height" content="720">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://chwedl.com/img/tupiantif.png">
+<meta name="twitter:image" content="https://chwedl.com/tupiantif.png">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script>
     tailwind.config = {
@@ -52,14 +52,14 @@
       border: 1px solid rgba(255, 255, 255, 0.5);
     }
     .soft-shadow {
-      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 8px 24px -16px rgba(15, 23, 42, 0.28);
     }
     .hover-lift {
       transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
     .hover-lift:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 18px 36px -22px rgba(15, 23, 42, 0.32);
     }
     .gradient-border {
       position: relative;
@@ -96,6 +96,20 @@
     }
     .route-pill[aria-current="page"] {
       color: #4263eb;
+    }
+    .section-kicker {
+      color: #64748b;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .section-title {
+      color: #0f172a;
+      font-size: clamp(1.875rem, 2.5vw, 2.5rem);
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: 0;
     }
     @media (max-width: 480px) {
       h1 { font-size: 2.75rem; line-height: 1; }
@@ -166,7 +180,7 @@
   "knowsAbout": ["Agent开发", "AI工作流", "自动化工具", "插件脚本", "接口调用", "数据处理"]
 }
 </script>
-<style data-purpose="pdf-v0.0312-print-overrides">
+<style data-purpose="pdf-v0.0322-print-overrides">
   @media print {
     main#resume > section:first-of-type { padding-bottom: 5px !important; }
     main#resume > section:first-of-type > div > div:first-child { display: block !important; }
@@ -312,26 +326,26 @@
 </div>
 </div>
 <div class="hidden md:flex space-x-8">
-<a class="route-pill text-slate-600 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="#resume"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a>
-<a class="route-pill text-slate-500 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="#projects"><span class="lang-zh">项目</span><span class="lang-en">Projects</span></a>
+<a class="route-pill text-slate-600 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="/home" data-route="/home" data-target="resume"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a>
+<a class="route-pill text-slate-500 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="/projects" data-route="/projects" data-target="projects"><span class="lang-zh">项目</span><span class="lang-en">Projects</span></a>
 <a class="text-slate-500 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="#experience"><span class="lang-zh">经历</span><span class="lang-en">Experience</span></a>
 <a class="text-slate-500 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="#skills"><span class="lang-zh">技能</span><span class="lang-en">Skills</span></a>
 <a class="text-slate-500 hover:text-brand-primary text-sm font-medium transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="#contact"><span class="lang-zh">联系</span><span class="lang-en">Contact</span></a>
 </div>
 <div class="flex items-center gap-2 sm:gap-4 min-w-0">
 <button id="langToggle" type="button" class="text-xs font-medium text-slate-500 hover:text-slate-800 transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" aria-label="切换语言，当前为中文" aria-pressed="false">中 / EN</button>
-<a class="hidden min-[390px]:inline-flex text-xs font-medium text-slate-600 hover:text-slate-900 px-3 py-1.5 rounded-full border border-slate-300 hover:border-slate-400 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./PDF/oneself.pdf" download="魏敬沅-Agent开发简历-v0.0312.pdf"><span class="lang-zh">查看简历</span><span class="lang-en">Resume</span></a>
+<a class="hidden min-[390px]:inline-flex text-xs font-medium text-slate-600 hover:text-slate-900 px-3 py-1.5 rounded-full border border-slate-300 hover:border-slate-400 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./resume-v0.0322.pdf" download="魏敬沅-Agent开发简历-v0.0322.pdf"><span class="lang-zh">查看简历</span><span class="lang-en">Resume</span></a>
 <a class="text-xs font-medium text-white bg-slate-800 hover:bg-slate-700 px-4 py-1.5 rounded-full shadow-sm hover:shadow transition-all whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="#contact"><span class="lang-zh">立即联系</span><span class="lang-en">Contact</span></a>
 </div>
 </div>
 </div>
 </nav>
 <!-- END: Navigation -->
-<main class="pt-24 pb-16" id="resume">
+<main class="pt-24 pb-20" id="resume">
 <!-- BEGIN: Hero Section -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20" aria-labelledby="hero-title">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-7 space-y-8">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16" aria-labelledby="hero-title">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+<div class="lg:col-span-7 space-y-7">
 <div class="flex flex-wrap gap-3">
 <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
 <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5"></span>
@@ -342,13 +356,13 @@
 </span>
 </div>
 <div>
-<h1 id="hero-title" class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-4">魏敬沅</h1>
+<h1 id="hero-title" class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-4"><span class="lang-zh">魏敬沅</span><span class="lang-en">Wei Jingyuan</span></h1>
 <h2 class="text-xl md:text-2xl font-medium text-slate-600"><span class="lang-zh">Agent 开发与 AI 工作流自动化 / 业务工具落地方向</span><span class="lang-en">Agent Development & AI Workflow Automation / Business Tool Delivery</span></h2>
 </div>
 <div class="space-y-4 text-slate-600 leading-relaxed max-w-2xl">
 <p><span class="lang-zh">关注 Agent 开发与 AI 工作流落地，持续跟踪国内外模型和 AI 技术趋势，能把重复业务流程拆成脚本、插件、接口和数据处理步骤，做成提升效率的自动化工具。</span><span class="lang-en">Focused on Agent development and AI workflow delivery, tracking model and AI technology trends while turning repeated business workflows into automation tools with scripts, plugins, APIs and data handling.</span></p>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6">
 <div class="bg-white p-4 rounded-2xl soft-shadow border border-slate-100">
 <div class="text-xs text-slate-500 mb-1"><span class="lang-zh">基本信息</span><span class="lang-en">Profile</span></div>
 <div class="text-sm font-semibold text-slate-900"><span class="lang-zh">男 · 21岁</span><span class="lang-en">Male · 21</span></div>
@@ -392,18 +406,19 @@
 <!-- END: Hero Section -->
 
 <!-- BEGIN: Tool Stack -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="skills" aria-labelledby="capabilities-title">
-<div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-16" id="skills" aria-labelledby="capabilities-title">
+<div class="mb-9 flex flex-col md:flex-row md:items-end justify-between gap-4">
 <div>
-<h2 id="capabilities-title" class="text-3xl font-semibold text-slate-500 uppercase tracking-widest mb-4"><span class="lang-zh">Tool Stack 工具栈</span><span class="lang-en">Tool Stack</span></h2>
+<p class="section-kicker mb-2"><span class="lang-zh">Tool Stack</span><span class="lang-en">Capability Map</span></p>
+<h2 id="capabilities-title" class="section-title mb-4"><span class="lang-zh">工具栈</span><span class="lang-en">Tool Stack</span></h2>
 <p class="text-sm text-slate-600 max-w-2xl leading-relaxed">
 <span class="lang-zh">按实际使用场景分类，区分 AI 开发、设计生成、办公数据与自动化工具。</span><span class="lang-en">Grouped by real usage: AI development, design/generation, office data and automation tools.</span>
 </p>
 </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow md:col-span-2">
-<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">Agent 与 AI 开发</span><span class="lang-en">Agent & AI Development</span></h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="bg-white rounded-xl p-5 border border-slate-200 soft-shadow md:col-span-2">
+<h3 class="text-sm font-bold text-slate-900 mb-3"><span class="lang-zh">Agent 与 AI 开发</span><span class="lang-en">Agent & AI Development</span></h3>
 <div class="flex flex-wrap gap-3">
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Claude Code</span>
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Codex</span>
@@ -417,8 +432,8 @@
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">HTML/CSS/JS</span>
 </div>
 </div>
-<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow md:col-span-2">
-<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">设计与后期</span><span class="lang-en">Design & Post-production</span></h3>
+<div class="bg-white rounded-xl p-5 border border-slate-200 soft-shadow md:col-span-2">
+<h3 class="text-sm font-bold text-slate-900 mb-3"><span class="lang-zh">设计与后期</span><span class="lang-en">Design & Post-production</span></h3>
 <div class="flex flex-wrap gap-3">
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">MidJourney</span>
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Stable Diffusion</span>
@@ -433,8 +448,8 @@
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">DaVinci</span>
 </div>
 </div>
-<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow">
-<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">办公与数据</span><span class="lang-en">Office & Data</span></h3>
+<div class="bg-white rounded-xl p-5 border border-slate-200 soft-shadow">
+<h3 class="text-sm font-bold text-slate-900 mb-3"><span class="lang-zh">办公与数据</span><span class="lang-en">Office & Data</span></h3>
 <div class="flex flex-wrap gap-3">
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">WPS</span>
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">Excel</span>
@@ -444,8 +459,8 @@
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">公式函数</span><span class="lang-en">Formulas</span></span>
 </div>
 </div>
-<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow">
-<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">自动化与接口</span><span class="lang-en">Automation & APIs</span></h3>
+<div class="bg-white rounded-xl p-5 border border-slate-200 soft-shadow">
+<h3 class="text-sm font-bold text-slate-900 mb-3"><span class="lang-zh">自动化与接口</span><span class="lang-en">Automation & APIs</span></h3>
 <div class="flex flex-wrap gap-3">
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">浏览器插件</span><span class="lang-en">Browser Plugins</span></span>
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700">API</span>
@@ -454,8 +469,8 @@
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">自动填表</span><span class="lang-en">Auto Fill</span></span>
 </div>
 </div>
-<div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow md:col-span-2">
-<h3 class="text-sm font-bold text-slate-900 mb-4"><span class="lang-zh">部署与环境</span><span class="lang-en">Deployment & Environment</span></h3>
+<div class="bg-white rounded-xl p-5 border border-slate-200 soft-shadow md:col-span-2">
+<h3 class="text-sm font-bold text-slate-900 mb-3"><span class="lang-zh">部署与环境</span><span class="lang-en">Deployment & Environment</span></h3>
 <div class="flex flex-wrap gap-3">
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">系统安装与维护</span><span class="lang-en">System Installation & Maintenance</span></span>
 <span class="px-3 py-1.5 rounded-full border border-slate-200 bg-white text-xs font-medium text-slate-700"><span class="lang-zh">电脑维护</span><span class="lang-en">Computer Maintenance</span></span>
@@ -470,13 +485,14 @@
 <!-- END: Tool Stack -->
 
 <!-- BEGIN: Projects -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="projects" aria-labelledby="projects-title">
-<div class="mb-10">
-<h2 id="projects-title" class="text-3xl font-semibold text-slate-500 uppercase tracking-widest mb-4"><span class="lang-zh">Project Cases 项目案例</span><span class="lang-en">Project Cases</span></h2>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-16" id="projects" aria-labelledby="projects-title">
+<div class="mb-9">
+<p class="section-kicker mb-2"><span class="lang-zh">Project Cases</span><span class="lang-en">Selected Work</span></p>
+<h2 id="projects-title" class="section-title mb-4"><span class="lang-zh">项目案例</span><span class="lang-en">Project Cases</span></h2>
 <p class="text-sm text-slate-600 max-w-2xl leading-relaxed"><span class="lang-zh">保留真实做过的自动化、插件、数据和页面项目。</span><span class="lang-en">Real automation, plugin, data and page projects.</span></p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<a class="block bg-white rounded-2xl p-6 md:p-8 border border-brand-primary/30 soft-shadow hover-lift md:col-span-2 relative overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./html/shangjia.html" aria-label="查看业务流程 Agent 化自动执行案例详情页">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<a class="block bg-white rounded-2xl p-6 md:p-8 border border-brand-primary/30 soft-shadow hover-lift md:col-span-2 relative overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./shangjia/index.html" aria-label="查看业务流程 Agent 化自动执行案例详情页">
 <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-8">
 <div>
 <div class="flex flex-wrap gap-2 mb-4">
@@ -518,7 +534,7 @@
 </div>
 </div>
 </a>
-<a class="block bg-white rounded-2xl p-6 border border-slate-200 soft-shadow hover-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./html/sucai.html" aria-label="查看 PS 自动样机成图流程详情页">
+<a class="block bg-white rounded-2xl p-6 border border-slate-200 soft-shadow hover-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./sucai/index.html" aria-label="查看 PS 自动样机成图流程详情页">
 <div class="flex justify-between gap-4 mb-5"><div><h3 class="text-lg font-bold text-slate-900"><span class="lang-zh">PS 自动样机成图流程</span><span class="lang-en">Photoshop Automated Mockup Workflow</span></h3><p class="text-xs text-slate-500 mt-1"><span class="lang-zh">设计自动化 / 流程提效</span><span class="lang-en">Design Automation / Workflow Efficiency</span></p></div><span class="px-2 py-1 h-fit bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500">PS</span></div>
 <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
 <div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">问题</span><span class="lang-en">Problem</span></p><p><span class="lang-zh">电商美工需要重复制作成品图和样机图，手动套图、调整和导出占用大量时间。</span><span class="lang-en">E-commerce design required repeated finished images and mockups, with manual compositing, adjustment and export taking significant time.</span></p></div>
@@ -527,7 +543,7 @@
 <div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">使用工具</span><span class="lang-en">Tools</span></p><p>Photoshop / <span class="lang-zh">批量导出 / 样机流程</span><span class="lang-en">Batch Export / Mockup Flow</span></p></div>
 </div>
 </a>
-<a class="block bg-white rounded-2xl p-6 border border-slate-200 soft-shadow hover-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./html/zbjsc.html" aria-label="查看美工设计与视觉落地详情页">
+<a class="block bg-white rounded-2xl p-6 border border-slate-200 soft-shadow hover-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./zbjsc/index.html" aria-label="查看美工设计与视觉落地详情页">
 <div class="flex justify-between gap-4 mb-5"><div><h3 class="text-lg font-bold text-slate-900"><span class="lang-zh">美工设计与视觉落地</span><span class="lang-en">Graphic Design and Visual Delivery</span></h3><p class="text-xs text-slate-500 mt-1"><span class="lang-zh">版式设计 / 电商视觉 / 物料输出</span><span class="lang-en">Layout Design / E-commerce Visuals / Asset Output</span></p></div><span class="px-2 py-1 h-fit bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500">Design</span></div>
 <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
 <div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">问题</span><span class="lang-en">Problem</span></p><p><span class="lang-zh">日常美工需求需要兼顾商品信息表达、版式统一、视觉吸引力和交付效率。</span><span class="lang-en">Daily design work needed to balance product information, layout consistency, visual appeal and delivery speed.</span></p></div>
@@ -536,7 +552,7 @@
 <div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">使用工具</span><span class="lang-en">Tools</span></p><p>Photoshop / CDR / <span class="lang-zh">版式设计 / 商品视觉</span><span class="lang-en">Layout Design / Product Visuals</span></p></div>
 </div>
 </a>
-<a class="block bg-white rounded-2xl p-6 border border-slate-200 soft-shadow hover-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./html/exceldwb.html" aria-label="查看 Excel 多维表数据管理详情页">
+<a class="block bg-white rounded-2xl p-6 border border-slate-200 soft-shadow hover-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./exceldwb/index.html" aria-label="查看 Excel 多维表数据管理详情页">
 <div class="flex justify-between gap-4 mb-5"><div><h3 class="text-lg font-bold text-slate-900"><span class="lang-zh">Excel 多维表数据管理</span><span class="lang-en">Excel Multi-dimensional Data Management</span></h3><p class="text-xs text-slate-500 mt-1"><span class="lang-zh">表格维护 / 多维数据 / 流程记录</span><span class="lang-en">Spreadsheet Maintenance / Multi-dimensional Data / Workflow Records</span></p></div><span class="px-2 py-1 h-fit bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500">Excel</span></div>
 <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
 <div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">问题</span><span class="lang-en">Problem</span></p><p><span class="lang-zh">商品、任务、人员、状态和资料记录分散时，查找、更新和复盘成本都会变高。</span><span class="lang-en">When product, task, owner, status and material records were scattered, searching, updating and reviewing became costly.</span></p></div>
@@ -545,7 +561,7 @@
 <div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">使用工具</span><span class="lang-en">Tools</span></p><p>Excel / WPS / <span class="lang-zh">多维表 / 数据视图</span><span class="lang-en">Multi-dimensional Tables / Data Views</span></p></div>
 </div>
 </a>
-<a class="block bg-white rounded-2xl p-6 border border-slate-200 soft-shadow hover-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./html/qdui.html" aria-label="查看前端 UI 界面实现详情页">
+<a class="block bg-white rounded-2xl p-6 border border-slate-200 soft-shadow hover-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./qdui/index.html" aria-label="查看前端 UI 界面实现详情页">
 <div class="flex justify-between gap-4 mb-5"><div><h3 class="text-lg font-bold text-slate-900"><span class="lang-zh">前端 UI 界面实现</span><span class="lang-en">Frontend UI Implementation</span></h3><p class="text-xs text-slate-500 mt-1"><span class="lang-zh">页面布局 / 组件界面 / 交互呈现</span><span class="lang-en">Page Layout / Component UI / Interaction Presentation</span></p></div><span class="px-2 py-1 h-fit bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500">UI</span></div>
 <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
 <div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">问题</span><span class="lang-en">Problem</span></p><p><span class="lang-zh">业务工具和展示页面需要清晰的布局、状态反馈和可操作界面，不能只停留在功能脚本层面。</span><span class="lang-en">Business tools and display pages needed clear layout, state feedback and usable interfaces, not only functional scripts.</span></p></div>
@@ -563,7 +579,7 @@
 <div><p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-1"><span class="lang-zh">使用工具</span><span class="lang-en">Tools</span></p><p><span class="lang-zh">浏览器插件 / API / 数据采集 / 自动填写</span><span class="lang-en">Browser Plugins / API / Data Collection / Auto Fill</span></p></div>
 </div>
 </article>
-<a id="baodanya" class="block bg-white rounded-2xl overflow-hidden border border-slate-200 soft-shadow hover-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./html/baodanya.html" aria-label="查看内部业务工具私有化改造项目详情页">
+<a id="baodanya" class="block bg-white rounded-2xl overflow-hidden border border-slate-200 soft-shadow hover-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2" href="./baodanya/index.html" aria-label="查看内部业务工具私有化改造项目详情页">
 <article class="p-6">
 <div class="flex justify-between gap-4 mb-5"><div><h3 class="text-lg font-bold text-slate-900"><span class="lang-zh">内部业务工具私有化改造</span><span class="lang-en">Internal Business Tool Privatization Refactor</span></h3><p class="text-xs text-slate-500 mt-1"><span class="lang-zh">工具复刻 / 私有化维护 / 功能二改</span><span class="lang-en">Tool Recreation / Private Maintenance / Feature Modification</span></p></div><span class="px-2 py-1 h-fit bg-slate-50 border border-slate-200 rounded text-[10px] text-slate-500">Tool</span></div>
 <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
@@ -589,12 +605,12 @@
 <!-- END: Projects -->
 
 <!-- BEGIN: Experience -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-slate-50/50 border-y border-slate-200/50" id="experience" aria-labelledby="experience-title">
-<div class="mb-10">
-<p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2"><span class="lang-zh">Work Experience 工作经历</span><span class="lang-en">Work Experience</span></p>
-<h2 id="experience-title" class="text-3xl font-bold text-slate-900 mb-4"><span class="lang-zh">真实岗位中的执行与提效</span><span class="lang-en">Execution and Efficiency in Real Roles</span></h2>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-16 bg-slate-50/50 border-y border-slate-200/50" id="experience" aria-labelledby="experience-title">
+<div class="mb-9">
+<p class="section-kicker mb-2"><span class="lang-zh">Work Experience</span><span class="lang-en">Work Experience</span></p>
+<h2 id="experience-title" class="section-title mb-4"><span class="lang-zh">工作经历</span><span class="lang-en">Execution and Efficiency in Real Roles</span></h2>
 </div>
-<div class="space-y-6">
+<div class="space-y-5">
 <article class="bg-white rounded-2xl p-6 border border-brand-primary/20 soft-shadow">
 <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
 <div><h3 class="text-lg font-bold text-slate-900"><span class="lang-zh">电商运营｜开发</span><span class="lang-en">E-commerce Operations | Development</span></h3><p class="text-xs text-slate-500 mt-1"><span class="lang-zh">产品上下架 / 合规质检 / 活动推广 / 图片样机 / 店铺端排版</span><span class="lang-en">Product Listing / Compliance & QC / Campaign Promotion / Mockups / Store Layout</span></p></div>
@@ -641,18 +657,18 @@
 
 
 <!-- BEGIN: Education and Strengths -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="education" aria-labelledby="education-title">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-<div class="lg:col-span-4 bg-white rounded-2xl p-6 border border-slate-200 soft-shadow">
-<p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2"><span class="lang-zh">Education 教育经历</span><span class="lang-en">Education</span></p>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-16" id="education" aria-labelledby="education-title">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-6">
+<div class="lg:col-span-4 bg-white rounded-xl p-5 lg:p-6 border border-slate-200 soft-shadow">
+<p class="section-kicker mb-2"><span class="lang-zh">Education</span><span class="lang-en">Education</span></p>
 <h2 id="education-title" class="text-2xl font-bold text-slate-900 mb-4"><span class="lang-zh">河南信息统计职业学院</span><span class="lang-en">Henan College of Information and Statistics</span></h2>
 <div class="space-y-3 text-sm text-slate-600">
 <div><span class="text-slate-400 text-xs block mb-1"><span class="lang-zh">学历</span><span class="lang-en">Degree</span></span><span class="font-medium text-slate-800"><span class="lang-zh">大专</span><span class="lang-en">College Diploma</span></span></div>
 <div><span class="text-slate-400 text-xs block mb-1"><span class="lang-zh">专业</span><span class="lang-en">Major</span></span><span class="font-medium text-slate-800"><span class="lang-zh">视觉传达艺术设计</span><span class="lang-en">Visual Communication Art Design</span></span></div>
 </div>
 </div>
-<div class="lg:col-span-8 bg-white rounded-2xl p-6 border border-slate-200 soft-shadow">
-<p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2"><span class="lang-zh">Strengths 个人优势</span><span class="lang-en">Personal Strengths</span></p>
+<div class="lg:col-span-8 bg-white rounded-xl p-5 lg:p-6 border border-slate-200 soft-shadow">
+<p class="section-kicker mb-2"><span class="lang-zh">Strengths</span><span class="lang-en">Personal Strengths</span></p>
 <h2 class="text-2xl font-bold text-slate-900 mb-6"><span class="lang-zh">学习、拆解、编排与落地</span><span class="lang-en">Learning, Breakdown, Orchestration and Delivery</span></h2>
 <ul class="space-y-3 md:space-y-0 md:grid md:grid-cols-2 gap-x-8 gap-y-3 text-sm text-slate-600 leading-relaxed list-disc pl-5">
 <li><span class="lang-zh">学习速度快，能持续跟进最新 AI 技术趋势，并研究国内外模型能力差异。</span><span class="lang-en">Learns quickly, follows AI technology trends and studies capability differences across models.</span></li>
@@ -666,11 +682,11 @@
 </section>
 <!-- END: Education and Strengths -->
 <!-- BEGIN: Contact -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="contact" aria-labelledby="contact-title">
-<div class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 soft-shadow">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-16" id="contact" aria-labelledby="contact-title">
+<div class="bg-white rounded-xl p-5 md:p-8 border border-slate-200 soft-shadow">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 <div class="lg:col-span-5">
-<p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-2"><span class="lang-zh">Contact 联系</span><span class="lang-en">Contact</span></p>
+<p class="section-kicker mb-2"><span class="lang-zh">Contact</span><span class="lang-en">Contact</span></p>
 <h2 id="contact-title" class="text-2xl font-bold text-slate-900 mb-3">魏敬沅 · Wei Jingyuan</h2>
 <p class="text-sm text-slate-600 leading-relaxed"><span class="lang-zh">Agent 开发 / AI 工作流自动化 / 业务工具落地。欢迎通过邮件、电话或 GitHub 联系岗位机会与项目合作。</span><span class="lang-en">Agent development / AI workflow automation / business tool delivery. Open to role opportunities and project collaboration by email, phone or GitHub.</span></p>
 </div>
